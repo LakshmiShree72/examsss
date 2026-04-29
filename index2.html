@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My 3D Workshop Project</title>
+    <link rel="stylesheet" href="style.css">
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+ </head>
+
+ <body>
+    <button class="back-link" onclick="goHome()">❮</button>
+
+<!-- Left Side Circular Button -->
+<button class="side-btn left-btn" onclick="previousModel()"> < </button>
+
+<!-- Right Side Circular Button -->
+<button class="side-btn right-btn" onclick="nextModel()"> > </button>
+
+        <h2 class="title1">Thickness Planer</h2>
+
+        <div class="flex-container">
+
+            <div class="viewer-box">
+<model-viewer
+    id="machineModel"
+    src="greenngine.glb"
+    camera-controls
+    auto-rotate>
+</model-viewer>
+            </div>
+
+            <div class="info-box">
+
+                <div class="button-row">
+                    <button class="tab-btn active">About</button>
+                    <button class="media-btn">Media</button>
+                    <button class="drawer-trigger" onclick="toggleDrawer()">History</button>
+                <div class="drawer" id="drawerBox">
+                   <p><strong>Alert</strong></p>
+                   <p>Sign In for more details.</p></div>
+
+<div class="text-content">
+<h3 id="aboutHeading">About the Machine</h3>
+
+<p id="aboutText">
+    A Thickness planer is a specialized woodworking machine designed to create boards of an even thickness throughout their length and perfectly flat on both surfaces. While a jointer straightens an edge or flattens a face, the planer ensures the second face is parallel to the first at a specific dimension.
+</p>
+
+<ul class="specs-list">
+    <li><strong>Type:</strong> <span id="typeText">Woodworking Machine</span></li>
+    <li><strong>Year:</strong> <span id="yearText">Around 1960</span></li>
+    <li><strong>Status:</strong> <span id="statusText">Old and Rusting</span></li>
+</ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
