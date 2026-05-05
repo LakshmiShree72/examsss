@@ -235,7 +235,18 @@ body {
      height: 50px;
      align-items: center;
 }
+.qr-section {
+    margin-top: 20px;
+    text-align: center;
+}
 
+.qr-code {
+    width: 120px;
+    height: 120px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255,255,255,0.2);
+}
 body {
     font-family: 'Inter', sans-serif;
     color: white;
