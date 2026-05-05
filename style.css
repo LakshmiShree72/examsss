@@ -238,6 +238,7 @@ body {
 .qr-section {
     margin-top: 20px;
     text-align: center;
+    margin-left:50px;
 }
 
 .qr-code {
