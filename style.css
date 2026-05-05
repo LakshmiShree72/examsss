@@ -236,13 +236,13 @@ body {
      align-items: center;
 }
 .qr-section {
-    margin-top: 10px;
+    margin-top: 5px;
     text-align: center;
     margin-left:350px;
 }
 
 .qr-code {
-    margin-top:10px;
+    margin-top:5px;
     width: 70px;
     height: 70px;
     margin-top: 10px;
